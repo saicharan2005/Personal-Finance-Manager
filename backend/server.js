@@ -10,14 +10,27 @@ const expenseRoutes = require("./routes/expenseRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
 
 //middlware to handle
+const cors = require("cors");
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL, // should be set in Vercel like: https://your-frontend.vercel.app
-    methods: ["GET", "POST", "DELETE", "PUT"],
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        "https://personal-finance-manager-9ijl.vercel.app",
+        "http://localhost:3000",
+      ];
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );
+
 
 
 app.use(express.json());
