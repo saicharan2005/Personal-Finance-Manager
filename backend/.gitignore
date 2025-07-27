@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+
+# User Uploads
+uploads/
+
+# Log files
+*.log
+npm-debug.log*
+
+# IDE/Editor specific files
+.vscode/
+.idea/
