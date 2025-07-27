@@ -7,7 +7,7 @@ const {
   downloadExpenseExcel,
 } = require("../controllers/expenseController.js");
 
-const protect = require("../middleware/authmiddleware");
+const protect = require("../middleware/authMiddleware.js");
 const router = express.Router();
 
 router.post("/add", protect, addExpense);
