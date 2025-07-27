@@ -4,9 +4,9 @@ import axiosInstance from '../../utils/axiosInstance';
 import { API_ENDPOINTS } from '../../utils/apiPaths';
 import toast from 'react-hot-toast';
 import Modal from '../../components/Modal';
-import DashboardLayout from '../../components/layouts/DashBoardLayout';
+import DashboardLayout from '../../components/layouts/DashboardLayout';
 import ExpenseOverview from '../../components/Expense/ExpenseOverview';
-import AddExpenseForm from '../../components/Expense/AddexpenseForm';
+import AddExpenseForm from '../../components/Expense/AddExpenseForm';
 import DeleteAlert from '../../components/Income/DeleteAlert';
 import ExpenseList from '../../components/Expense/ExpenseList';
 
