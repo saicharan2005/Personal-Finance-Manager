@@ -135,7 +135,7 @@ const Income = () => {
     fetchIncomedetails();
 
     return () => {};
-  }, []);
+  },);
   
 
   return (

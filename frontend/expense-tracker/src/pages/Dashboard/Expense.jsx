@@ -134,7 +134,7 @@ const Expense = () => {
       fetchExpensedetails();
   
       return () => {};
-    }, []);
+    },);
 
   
   return (

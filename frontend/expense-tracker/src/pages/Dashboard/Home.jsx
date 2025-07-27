@@ -9,12 +9,12 @@ import { IoMdCard } from 'react-icons/io';
 import InfoCard from '../../components/cards/InfoCard';
 import { addThousandsSeparator } from '../../utils/helpers';
 import RecentTransactions from "../../components/Dashboard/RecentTransactions";
-import ErrorBoundary from '../../components/ErrorBoundary';
+// import ErrorBoundary from '../../components/ErrorBoundary';
 import FinanceOverview from '../../components/Dashboard/FinanceOverview';
 import ExpenseTransactions from '../../components/Dashboard/ExpenseTransactions';
-import Last30DaysExpenses from '../../components/Dashboard/last30DaysExpenses';
 import RecentIncomeWithChart from '../../components/Dashboard/RecentIncomeWithChart';
 import RecentIncome from '../../components/Dashboard/RecentIncome';
+import Last30DaysExpenses from '../../components/Dashboard/Last30DaysExpenses';
 const Home = () => {
    useUserAuth()
 
@@ -45,7 +45,7 @@ const Home = () => {
     return () => {
       
     }
-  }, []);
+  },);
 
   return (
     <DashboardLayout activeMenu="Dashboard">
