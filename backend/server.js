@@ -9,15 +9,14 @@ const incomeRoutes = require("./routes/incomeRoutes");
 const expenseRoutes = require("./routes/expenseRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
 
-//middlware to handle
-const cors = require("cors");
+
 
 app.use(
   cors({
     origin: function (origin, callback) {
       const allowedOrigins = [
         "https://personal-finance-manager-9ijl.vercel.app",
-        "http://localhost:3000",
+        "http://localhost:5173",
       ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
