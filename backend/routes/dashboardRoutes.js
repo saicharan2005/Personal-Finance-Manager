@@ -4,7 +4,7 @@ const {
   getDashboardData,
 } = require("../controllers/dashboardController.js");
 
-const protect = require("../middleware/authmiddleware");
+const protect = require("../middleware/authMiddleware");
 const router = express.Router();
 
 
